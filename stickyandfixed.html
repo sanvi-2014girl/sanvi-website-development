@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 200vh;
+        }
+       section{
+        height: 300px;
+        width: 600px;
+        border: 2px solid black;
+        overflow-y: scroll;
+        margin: 200px auto;
+       }
+       #fixed{
+        width: 150%;
+        text-align: right;
+        padding: 20px;
+        background-color: blue;
+        color: white;
+        font-size: 100px;
+        position: fixed;
+        top:0px;
+        right: 1px;
+        z-index: 1;
+
+       }
+       #sticky{
+        width: 100%;
+        border: 2px solid black;
+        text-align: center;
+        padding: 10px;
+        background-color: red;
+        color: white;
+        position: sticky;
+        top: 0px;
+
+       }
+        body{
+            height:200vh
+        }
+        div{
+            height: 200px;
+            width:200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: beige;
+        }
+        #div1{
+            background-color: red;
+            position: relative;
+            top: 100px;
+            left: 200px;
+        }
+        #div2{
+            background-color: orangered;
+            position: absolute;
+            left: 100px;
+            bottom: 50px;
+            z-index: 1;
+        }
+        #div3{
+            background-color: rgb(235, 214, 32);
+            position: fixed;
+            bottom: 200px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div id="fixed"><center>Fixed</center></div><br><br>
+    <section>
+        <br>
+        <div id="sticky">
+            sticky
+        </div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus iusto dolorem culpa obcaecati voluptatibus molestiae, consequatur temporibus commodi? Perferendis tempora deleniti ratione dolor est esse doloribus quis porro aut explicabo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam est odio deleniti enim accusantium itaque nisi, quia consequatur quisquam eius, vel libero ab provident dolores deserunt veritatis, dolor adipisci illum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi animi enim itaque dolorum sit dolorem qui? Doloremque labore architecto ut consequuntur assumenda itaque amet eveniet officia numquam, sit recusandae magni! Itaque saepe provident reiciendis cum tempora, libero delectus animi, maiores, minima nobis quod repudiandae. Repellat minima, quis soluta ipsam quaerat ab voluptate, expedita temporibus quod est sint obcaecati esse et accusamus corrupti porro facilis illum maiores ipsum eius error. Quam dignissimos ea quaerat quas itaque ullam, numquam sit aspernatur doloribus quae consequatur at temporibus, suscipit eos tenetur sequi unde quo culpa id hic? Illum quasi soluta alias! Rerum eius necessitatibus voluptate commodi quaerat obcaecati aut aliquam fugit consequatur ut, nesciunt a cupiditate. Ab nulla est enim, repellat excepturi aliquid doloremque cumque laudantium animi neque, accusamus, ratione molestias aut saepe a sapiente in eveniet accusantium eum. Quas est cum beatae, quae eligendi magnam nesciunt esse commodi nisi voluptatum! Sit, sint corporis quae nobis expedita necessitatibus porro. Sint fugiat iste illum sit ex dignissimos nobis, iusto magnam! Culpa omnis ipsam in iusto reiciendis voluptatibus saepe id alias voluptatem doloribus nostrum aliquam suscipit quia expedita, nihil harum quaerat. Dignissimos, tenetur. Neque, voluptas eligendi vitae reprehenderit ex nisi numquam repudiandae illo dignissimos recusandae fugit fuga maiores nulla enim impedit ullam aut expedita nam deleniti repellendus? Nihil dolores id explicabo delectus unde, qui harum dignissimos totam, accusantium ullam nobis maxime hic cum, officiis corrupti et suscipit sit ad aliquid? Temporibus repellat, doloremque fugit ullam omnis maxime minima aliquam nostrum ipsa, perspiciatis consectetur ab quo dignissimos voluptatum praesentium odit debitis. Quam quaerat quos eligendi, error harum iusto saepe pariatur suscipit dolore, voluptates odit expedita quae dolorem! Maiores laborum sequi eos quod repellat assumenda laboriosam asperiores beatae dicta, qui voluptate sit dolor doloremque id accusamus eum voluptatibus, rerum voluptates saepe autem dolore veritatis. Voluptate vitae totam eveniet.</p>
+    </section>
+    <div id="div1">
+        ABSOLUTE
+    </div>
+    <div id="div2">
+        FIXED
+    </div>
+    <div id="div3">
+        RELATIVE
+    </div>
+    
+    
+</body>
+</html>
