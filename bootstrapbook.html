@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <style>
+      .card{
+        box-shadow: 0px 0px 10px;
+        transition: 0.5s
+      }
+      .card:hover {
+        cursor: pointer;
+        scale: 1.1;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+          rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+          rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      }
+      .card img {
+        width: 200px;
+        margin: 20px auto;
+        border-radius: 10px;
+        border: 2px solid gray;
+      }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-center text-danger">Sanvi's exploring Bookshop</h1>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Explorer</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link" href="#">Pricing</a>
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <div class="container-fluid my-5 mx-4">
+            <div class="row">
+                <div class="col-md-4 mt-5">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://m.media-amazon.com/images/I/91M913SuP+L._UF1000,1000_QL80_.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">The Famous Five: Five on a treasure Island</h5>
+                            <p class="card-text text-center">Author: Enid Blyton </p>
+                            <p class="text-center">Price: $75</p>
+                            <p class="text-center text-warning">The story begins with Julian, Dick, Anne, and George (Georgina) holidaying near the seaside; they are joined by Timmy, George’s loyal dog. The children discover hints about a hidden treasure on the nearby Kirrin Island, which belongs to George’s family. Through careful sleuthing, including exploring caves and secret places on the island, the Famous Five uncover the treasure while outsmarting the villains who also seek it. The narrative emphasizes teamwork, courage, and problem-solving.</p>
+                            <a href="#" class="btn btn-warning">Buy Me Now!</a>
+                            <a href="#" class="btn btn-danger">Add to Cart</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4 mt-5">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://m.media-amazon.com/images/I/81q77Q39nEL.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Harry Potter and the Philosopher's Stone</h5>
+                            <p class="card-text text-center">Author: J.K Rowling</p>
+                            <p class="text-center text-primary">About this: Harry Potter and the Philosopher's Stone (published as Harry Potter and the Sorcerer's Stone in the United States) is a fantasy novel written by British author J. K. Rowling. Released on 26 June 1997 by Bloomsbury Publishing in the UK, it serves as the debut novel for both the author and the globally acclaimed seven-book Harry Potter series. The story introduces a young orphan who discovers his magical heritage and begins his formal education in wizardry.</p>
+                            <p class="text-center">Price: $72</p>
+                            <a href="#" class="btn btn-warning">Buy Me Now!</a>
+                            <a href="#" class="btn btn-danger">Add to Cart</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4 mt-5">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://m.media-amazon.com/images/I/81YHe1AzDiL._AC_UF1000,1000_QL80_.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">The Jungle Book</h5>
+                            <p class="card-text text-center">Author: Rudyard Kipling</p>
+                            <p class="text-center">Price: $76</p>
+                            <p class="text-center text-danger">The Jungle Book is a celebrated 1894 collection of stories by English author Rudyard Kipling, set mostly in the vibrant forests of India. The most famous portion of the book centers on Mowgli, an orphaned human "man-cub" who is adopted and raised by a pack of wolves. Guided by the wise, sleepy brown bear Baloo and the fiercely protective black panther Bagheera, Mowgli learns the strict "Law of the Jungle." However, he constantly faces danger from Shere Khan, a ruthless Bengal tiger determined to kill him, forcing Mowgli to eventually confront his identity and choose between the world of wild beasts and the world of humans.</p>
+                            <a href="#" class="btn btn-warning">Buy Me Now!</a>
+                            <a href="#" class="btn btn-danger">Add to Cart</a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+            <div class="container my-5 d-flex justify-content-center">
+                <div class="spinner-border text-success" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<span style="padding-left: 20px;">
+    <h3>Loading more books</h3>
+</span>
+            </div>
+            <div class="d-flex justify-content-center">
+                <nav aria-label="Page navigation example">
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+  </ul>
+</nav>
+            </div>
+
+        </div>
+
+    </main>
+    <footer>
+        <p class="bg-primary p-5 m-0 text-center text-light">Created by Sanvi at Codingal</p>
+
+    </footer>
+</body>
+
+</html>
