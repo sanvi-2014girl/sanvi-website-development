@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        .scrollspy-example {
+            position: relative;
+            height: 200px;
+            overflow-y: scroll;
+            margin-bottom: 40px;
+            box-shadow: 0px 0px 3px black;
+            padding: 10px;
+        }
+        .carousel-item img {
+            height: 400px;
+            object-fit: cover;
+        }
+        .h4{
+            text-align: center;
+        }
+    </style>
+</head>
+<header class="text-center bg-primary">
+    <h1>Pet Shop</h1>
+</header>
+
+<body>
+    
+    <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
+        <a class="navbar-brand" href="#">Menu</a>
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading1">Dogs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading2">Cats</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                    aria-expanded="false">Others</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#scrollspyHeading3">Birds</a></li>
+                    <li><a class="dropdown-item" href="#scrollspyHeading4">Rabbits</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#scrollspyHeading5">Hamsters</a></li>
+                    <li><a class="dropdown-item" href="#scrollspyHeading3">Fish</a></li>
+                    <li><a class="dropdown-item" href="#scrollspyHeading3">Small rodents</a></li>
+                    <li><a class="dropdown-item" href="#scrollspyHeading3">Reptiles</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+        data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2 text-center text-primary" tabindex="0">
+        <h4 id="scrollspyHeading1">About dogs:</h4>
+        <p>Dogs are humanity's oldest animal companions, having shared our lives and homes for tens of thousands of years. They evolved from an extinct wolf ancestor into the incredibly diverse, loyal, and capable pets we know today.</p>
+        <h4 id="scrollspyHeading2">About Cats</h4>
+        <p>Cats are the world’s most popular independent pets, having transitioned from ancient wilderness predators to beloved indoor companions over 10,000 years. Today, they are celebrated for their graceful agility, low-maintenance lifestyles, and affectionate yet private personalities.</p>
+        <h4 id="scrollspyHeading3">Others</h4>
+        <p>Birds, fish, small rodents, and reptiles make up the diverse world of companion animals outside of dogs and cats. Choosing among them depends heavily on how much time, space, and daily interaction you want to invest.</p>
+        <h4 id="scrollspyHeading3">Birds</h4>
+        <p>Birds are highly intelligent, visually stunning, and deeply engaging pets that bring incredible energy, song, and life into a home. Unlike traditional four-legged pets, they navigate the world in three dimensions and possess social and cognitive skills that rival those of young children.</p>
+        <h4 id="scrollspyHeading3">Rabbits</h4>
+        <p>Rabbits are the third most popular domesticated pet globally, known for their quiet nature, expressive personalities, and deep capacity for bonding with human companions. Despite common misconceptions, they are complex, long-lived animals that require much more than a simple outdoor hutch.</p>
+        <h4 id="scrollspyHeading3">Hamsters</h4>
+        <p>Hamsters are among the most popular small pocket pets in the world, famous for their cute expressions, energetic nocturnal habits, and solitary lifestyles. While they are small and quiet, they require specialized care, large living environments, and proper handling to thrive.</p>
+        <h4 id="scrollspyHeading3">Small rodents</h4>
+        <p>Small rodents—including guinea pigs, rats, mice, chinchillas, and gerbils—are popular pocket pets celebrated for their high intelligence, engaging social structures, and compact living space needs. While often grouped together, each species has entirely unique dietary, social, and environmental requirements.</p>
+        <h4 id="scrollspyHeading3">Reptiles</h4>
+        <p>Reptiles are a highly popular and fascinating category of exotic pets, celebrated for their prehistoric appearance, quiet nature, and hypoallergenic qualities. Unlike traditional pets, they are ectothermic (cold-blooded), meaning they rely entirely on their external environment to regulate their body temperature.</p>
+        <h4 id="scrollspyHeading3">Fish</h4>
+        <p>Fish are the most numerous pets globally, admired for their vibrant colors, serene movements, and the peaceful, stress-reducing ambiance they bring to any space. While they do not require walks or grooming, keeping fish successfully relies entirely on managing a delicate, invisible ecosystem within their tank.</p>
+        
+    </div>
+    
+    <main class="text-center">
+        <h2>Popular dogs</h2>
+        <p class="text-danger">The French Bulldog and the Labrador Retriever currently trade the crown as the most popular dog breeds globally. Right alongside them, the Golden Retriever, German Shepherd, and Poodle consistently round out the top tier of beloved canine companions.</p>
+    </main>
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1">Golden Retriever</button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://a-z-animals.com/media/Golden-Retriever-Canis-familiaris.jpg" class="d-block w-100" alt="Golden Retriever">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Golden Retrievers</h5>
+                    <p>The Golden Retriever ranks among the most popular and beloved dog breeds worldwide. Originally bred in Scotland during the 19th century as elite hunting companions, they are now celebrated as the ultimate family pet, world-class service animal, and loyal companion.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.ctfassets.net/nx3pzsky0bc9/5JNIP0KkbMkF8sjyeVFcvt/d2db4e388b752e69935a6001b0259efa/Doberman_feature_image.png?q=65&w=804" class="d-block w-100" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-center">Doberman</h5>
+                    <p>The Doberman Pinscher is the ultimate combination of elite intelligence, sleek athletic beauty, and fierce loyalty. Originally bred in late 19th-century Germany as personal protection dogs, modern Dobermans are deeply affectionate family guardians who thrive on human companionship.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://cdn.britannica.com/84/232784-050-1769B477/Siberian-Husky-dog.jpg" class="d-block w-100" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Siberian-Husky-dog</h5>
+                    <p>The Siberian Husky is a stunning, medium-sized working dog famous for its striking wolf-like appearance, piercing eyes, and high-endurance heritage. Originally bred by the Chukchi people of Siberia to haul light loads over vast, frozen landscapes, they are independent, deeply social, and famously vocal companions.</p>
+                </div>
+            </div>
+            
+            
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    
+</body>
+<footer class="p-5 bg-primary mt-5 text-center">
+    <h5>Created by Sanvi</h5>
+</footer>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</html>
